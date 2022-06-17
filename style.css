@@ -43,7 +43,7 @@ p {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 4em;
+  padding: 3em;
 }
 
 .car-heading {
@@ -64,10 +64,10 @@ p {
 
 .car-btn {
   display: inline-block;
-  width: 45%;
+  width: 50%;
   padding: 0.75em 1em;
   border: 2px solid hsl(0, 0%, 95%);
-  border-radius: 2em;
+  border-radius: 1em;
   background: hsl(0, 0%, 95%);
   text-decoration: none;
   text-align: center;
@@ -76,7 +76,7 @@ p {
 
 .car-btn.sedan {
     color: hsl(31, 77%, 52%);
-    }
+}
 
 .car-btn.suv {
 color: hsl(184, 100%, 22%);
@@ -94,23 +94,35 @@ color: hsl(184, 100%, 22%);
 
 /** Mobile: 375px **/
 
-/* Responsive layout - makes a one column layout instead of a two-column layout */
+@media screen and (max-width: 1080px) and (min-width: 800px) {
+
+  .car-btn {
+    display: inline-block;
+    font-size: 70%;
+  }
+
+  .car-brief {
+    font-size: 80%;
+  }
+
+}
+
+
 @media (max-width: 800px) {
     .columns {
       flex-direction: column;
     }
 
+    .car {
+      padding: 5em;
+    }
+
     .car.sedan {
-        border-radius: 0;
-      }
-      
-      .car.suv {
-        background-color: hsl(184, 100%, 22%);
-        color: hsl(0, 0%, 100%);
+        border-radius: 0.75em 0.75em 0 0;;
       }
       
       .car.luxury {
-        border-radius: 0 ;
+        border-radius: 0 0 .75em .75em ;
       }
 
   }
