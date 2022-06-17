@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+
+body {
+  font-size: 15px;
+  margin: 10px auto;
+  font-family: "Lexend Deca", sans-serif;
+  background: hsl(0, 0%, 95%);
+  width: 85%;
+  max-width: 1440px;
+}
+
+p {
+  color: hsla(0, 0%, 100%, 0.75);
+  line-height: 1.75em;
+}
+
+.columns {
+  display: flex;
+}
+
+.col {
+  display: flex;
+}
+
+.car.sedan {
+  background-color: hsl(31, 77%, 52%);
+  color: hsl(0, 0%, 100%);
+  border-radius: 0.75em 0 0 0.75em;
+}
+
+.car.suv {
+  background-color: hsl(184, 100%, 22%);
+  color: hsl(0, 0%, 100%);
+}
+
+.car.luxury {
+  background-color: hsl(179, 100%, 13%);
+  color: hsl(0, 0%, 100%);
+  border-radius: 0 0.75em 0.75em 0;
+}
+
+.car {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 4em;
+}
+
+.car-heading {
+  margin-top: 1.2em;
+  font-family: "Big Shoulders Display", cursive;
+  font-weight: 700;
+  color: hsl(0, 0%, 95%);
+  text-transform: uppercase;
+}
+
+.car-brief {
+  margin: 2.5em 0 4em;
+}
+
+.car-actions {
+  margin-top: 1.25em;
+}
+
+.car-btn {
+  display: inline-block;
+  width: 45%;
+  padding: 0.75em 1em;
+  border: 2px solid hsl(0, 0%, 95%);
+  border-radius: 2em;
+  background: hsl(0, 0%, 95%);
+  text-decoration: none;
+  text-align: center;
+  margin-right: 1em;
+}
+
+.car-btn.sedan {
+    color: hsl(31, 77%, 52%);
+    }
+
+.car-btn.suv {
+color: hsl(184, 100%, 22%);
+}
+
+.car-btn.luxury {
+    color: hsl(179, 100%, 13%);;
+    }
+
+.car-btn:hover {
+  background: transparent;
+  color: hsl(0, 0%, 95%);
+}
+
+
+/** Mobile: 375px **/
+
+/* Responsive layout - makes a one column layout instead of a two-column layout */
+@media (max-width: 800px) {
+    .columns {
+      flex-direction: column;
+    }
+
+    .car.sedan {
+        border-radius: 0;
+      }
+      
+      .car.suv {
+        background-color: hsl(184, 100%, 22%);
+        color: hsl(0, 0%, 100%);
+      }
+      
+      .car.luxury {
+        border-radius: 0 ;
+      }
+
+  }
