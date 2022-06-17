@@ -1,56 +1,56 @@
 /*** CSS Grid Box by Adedayo Agboola **/
 
 body {
-    font-size: 15px;
-    margin: 50px auto;
-    font-family: "Lexend Deca", sans-serif;
-    background: hsl(237, 14%, 22%);
-    width: 85%;
-  }
-  
-  .columns {
-    display: grid;
-    grid-template-columns: auto auto auto auto;
-    gap: 10px;
-  }
-  
-  
-  .col {
-    height: 250px;
-  }
-  
-  .col.orange {
-    background-color: hsl(31, 96%, 57%);
-    grid-column-start: 1;
-    grid-column-end: 4;
-  }
-  
-  .col.yellow {
-    background-color: hsl(55, 96%, 57%);
-  }
-  
-  .col.green {
-    background-color: hsl(140, 74%, 35%);
-    grid-column-start: 1;
-    grid-column-end: 3;
-    grid-row-start: 2;
-    grid-row-end: 5;
-    
-  }
-  
-  .col.blue {
-    height: 120px;
-    grid-column-start: 3;
-    grid-column-end: 5;
-    grid-row-start: 2;
-    grid-row-end: 3;
-    background-color: hsl(191, 80%, 48%);
-  }
-  
+  font-size: 15px;
+  margin: 50px auto;
+  font-family: "Lexend Deca", sans-serif;
+  background: hsl(237, 14%, 22%);
+  width: 85%;
+}
 
-  .col.lblue {
-    height: 120px;
-    grid-column-start: 3;
-    grid-column-end: 5;
-    background-color: hsl(191, 80%, 48%);
-  }
+.columns {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 10px;
+}
+
+
+.col {
+  height: 250px;
+}
+
+.col.orange {
+  background-color: hsl(31, 96%, 57%);
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
+
+.col.yellow {
+  background-color: hsl(55, 96%, 57%);
+}
+
+.col.green {
+  background-color: hsl(140, 74%, 35%);
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 5;
+  
+}
+
+.col.blue {
+  height: 120px;
+  grid-column-start: 3;
+  grid-column-end: 5;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  background-color: hsl(191, 80%, 48%);
+}
+
+
+.col.lblue {
+  height: 120px;
+  grid-column-start: 3;
+  grid-column-end: 5;
+  background-color: hsl(191, 80%, 48%);
+}
